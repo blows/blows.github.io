@@ -266,7 +266,8 @@ body {
   #picture {
     grid-column: col 1 / span 4;
     grid-row: row 1 / span 3;
-    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
   }
 }
 
