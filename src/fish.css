@@ -1,0 +1,178 @@
+/* ----- fish --------------------------------------------------------------- */
+.fish {
+  position: relative;
+  /* border-width: .25vh;
+  border-color: #f2f2f2;
+  border-style: solid; */
+}
+
+.fish svg {
+  width: auto;
+  height: 95%;
+}
+
+.fish svg path {
+  stroke: #f2f2f2;
+  stroke-width: .25vh;
+}
+
+.fish svg circle {
+  fill: #f2f2f2;
+}
+
+.f1 {
+  width: 15vw;
+  height: 5vw;
+  left: 3vw;
+	top: 4vh;
+  animation-name:swim;
+	animation-duration:30s;
+	animation-iteration-count:infinite;
+	animation-timing-function: linear;
+}
+
+.f2 {
+  width: 15vw;
+  height: 5vw;
+  left: 15vw;
+	top: 80vh;
+  animation-name:swim;
+	animation-duration:40s;
+	animation-iteration-count:infinite;
+	animation-timing-function: ease-in-out;
+}
+
+.f3 {
+  width: 12vw;
+  height: 3vw;
+  left: 70vw;
+	top: 50vh;
+  animation-name:swim;
+	animation-duration:45s;
+	animation-iteration-count:infinite;
+	animation-timing-function: ease-in-out;
+}
+
+.f4 {
+  width: 17vw;
+  height: 6vw;
+  left: 80vw;
+	top: 20vh;
+  animation-name:swim;
+	animation-duration:25s;
+	animation-iteration-count:infinite;
+	animation-timing-function: linear;
+}
+
+.f5 {
+  width: 14vw;
+  height: 6vw;
+  left: 55vw;
+	top: 65vh;
+  animation-name:swim;
+	animation-duration:35s;
+	animation-iteration-count:infinite;
+	animation-timing-function: ease-in-out;
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+/* ----- Swimming ----------------------------------------------------------- */
+@keyframes swim {
+	from {
+		left:200px;
+	}
+	20% {
+		left:0px;
+		transform:scaleX(1);
+		z-index:90;
+	}
+	20.5% {
+		transform:scaleX(-1);
+		z-index:10;
+		left:-30px;
+	}
+	21% {
+		left:80px;
+	}
+	42% {
+		left:550px;
+	}
+	50% {
+		z-index:28;
+		top:130px;
+		left:630px;
+		transform:scaleX(-1);
+	}
+	50.5% {
+		transform:scaleX(1);
+		z-index:100;
+		left:630px;
+		top:160px;
+	}
+	51% {
+		left:530px;
+		z-index:150;
+	}
+	60% {
+		left:300px;
+		z-index:150;
+	}
+	64% {
+		left:200px;
+		z-index:150;
+	}
+	66% {
+		left:80px;
+		z-index:150;
+	}
+	69%{
+		left:-30px;
+		z-index:150;
+	}
+	70% {
+		top:105px;
+		left:-30px;
+		transform:scaleX(1);
+		z-index:90;
+	}
+	70.5% {
+		transform:scaleX(-1);
+		z-index:10;
+		left:-30px;
+	}
+	71% {
+		left:40px;
+	}
+	80% {
+		left:550px;
+	}
+	81% {
+		left:550px;
+		top:70px;
+	}
+	82% {
+		left:550px;
+		transform:scaleX(-1);
+	}
+	82.5% {
+		transform:scaleX(1);
+		top:70px;
+		left:550px;
+	}
+	84% {
+		top:105px;
+		left:500px;
+		z-index:28;
+	}
+	88% {
+		top:105px;
+		left:400px;
+		z-index:28;
+	}
+	to {
+		left:200px;
+	}
+}
